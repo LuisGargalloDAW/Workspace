@@ -1,0 +1,33 @@
+
+public class VEC04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int f = 5;
+		final int c = 5;
+		int max=-100;
+		int min=100;
+		int posicionmax=0;
+		int posicionmin=0;
+		
+		
+		int[][] vector;
+		vector = new int[f][c];
+		
+		for(int k = 0; k < f ; k++){
+			for (int l = 0; l < c; l++){
+				vector[k][l]=(int) (Math.random() * (100-(-100)+1)-100);
+				System.out.printf("%3d",vector[k][l]);
+			}
+		}//for 
+		
+		for(int k = 0; k < f ; k++){
+			for (int l = 0; l < c; l++){
+				
+			}
+		}//for
+		
+		
+	}
+
+}

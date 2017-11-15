@@ -1,0 +1,12 @@
+
+public class Ejer36 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		final int columnas=5;
+		int vector[][];
+		vector = new int[][];
+	}
+
+}

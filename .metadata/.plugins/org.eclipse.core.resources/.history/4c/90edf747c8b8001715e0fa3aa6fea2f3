@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class String03 {
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Ingrese la frase: ");
+		String frase = new String();
+		frase=teclado.nextLine();// recogemos la frase 
+		
+		System.out.println("Ingrese la letra: ");
+		String palabra = new String();
+		palabra=teclado.nextLine();
+		int contador=0;
+		String respuesta = new String();
+		respuesta=palabra;
+		contador=frase.indexOf(respuesta);
+		
+		if (frase.indexOf(respuesta)==-1){
+			respuesta=palabra + " ";
+			contador=frase.indexOf(respuesta);
+			System.out.println("La posicion de la palabra es: " + contador);
+			if (frase.indexOf(respuesta)==-1){
+				respuesta=" " +palabra + " ";
+				contador=frase.indexOf(respuesta);
+				System.out.println("La posicion de la palabra es: " + contador);
+				if (frase.indexOf(respuesta)==-1){
+					System.out.println("la palabra no existe dentro de la oracion");
+				}//ultimoif
+			}//segundoif
+		}//primerif
+	
+		
+	}
+}
