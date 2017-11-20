@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class S01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado= new Scanner(System.in);
+		String frase = "";
+		String letra="";
+		String vectorFrase[];
+		vectorFrase = new String[frase.length()];
+		
+		System.out.println("Introduzca una frase");
+		frase=teclado.nextLine();
+	
+		do{System.out.println("Introduzca una letra");
+		letra=teclado.nextLine();
+		}while(letra.length()!=1);
+		
+		
+		
+		
+	}
+
+}
