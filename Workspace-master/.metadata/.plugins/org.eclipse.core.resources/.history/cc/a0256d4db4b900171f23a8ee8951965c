@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class String03 {
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Ingrese la frase: ");
+		String frase = new String();
+		frase=teclado.nextLine();// recogemos la frase 
+		
+		System.out.println("Ingrese la letra: ");
+		String palabra = new String();
+		palabra=teclado.nextLine();
+		
+		if (frase.startsWith(palabra+ " ")){
+			System.out.println("la posicion es" + frase.indexOf(palabra));
+		}else if (frase.indexOf(" "+ palabra +" ")!=-1){
+			System.out.println("la posicion es" + frase.indexOf(" "+palabra+ " " +1));
+		}else if (frase.endsWith(""+ palabra)){
+			System.out.println("la posicion es" + frase.indexOf(" "+ palabra)+1);
+		}else 
+			System.out.println("La palabra no existe en la oracion");
+	}
+}

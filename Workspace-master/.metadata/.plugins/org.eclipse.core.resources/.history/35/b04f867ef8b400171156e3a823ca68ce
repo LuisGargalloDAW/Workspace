@@ -1,0 +1,17 @@
+
+public class Ejer5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		int conta = 0;
+		
+		for (int k = 1; k <= 100 ; k = k+ 2  ){
+			System.out.println(k);
+			conta = conta + 1;
+		}
+		System.out.println("Hay : " + conta + " numeros impares entre 1 y 100");
+	}
+
+}
