@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Ahorcado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner teclado = new Scanner (System.in);
+		String palabras[]={"casa","perro","luis","boli","vida"};
+		String letrasJugadas[];
+		String oculto[] = null;
+		String letra="", palabraAdivinar="";
+		boolean correcto=false;
+		
+		palabraAdivinar = palabras[(int)Math.random()*5];
+		
+		for (int k = 0; k < palabraAdivinar.length();k++  ){
+			oculto[k]="X";
+		}
+		
+		while(correcto==false){
+			System.out.println("Esta es la palabra que tienes que adivinar");
+			for (int k = 0; k < palabraAdivinar.length();k++  ){
+				System.out.print(oculto[k]);;
+			}
+		}
+		
+		
+	}
+
+}

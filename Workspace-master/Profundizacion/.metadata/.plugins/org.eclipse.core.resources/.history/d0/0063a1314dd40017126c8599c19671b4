@@ -1,0 +1,28 @@
+public class ULTIMDOJO {
+	public static void main(String[] args) {
+		String vOrdenado[]={"A♥","2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥","A♣","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♦","2♦","3♦","4♦","5♦","6♦","7♦","8♦","9♦","10♦","J♦","Q♦","K♦","A♠","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠"};
+		int aleatorios[]=new int [52];
+		String vDesordenado[]=new string[52];
+
+		for (int k = 0; k<52; k++){
+			aleatorios[k]=k+1;
+		}
+
+		Random r = new Ramdom;
+		for (int i = aleatorios.length; i > 0; i--) {
+    		int posicion = r.nextInt(i);
+    		int tmp = Aleatorios[i-1];
+    		aleatorios[i - 1] = numerosAleatorios[posicion];
+    		aleatorios[posicion] = tmp;
+    	}
+
+    	for (int k = 0; k<52; k++){
+			System.out.println(aleatorios[k]);
+		}
+
+		for (int k = 0; k<52; k++){
+			vDesordenado[k]=vOrdenado[aleatorios[k]];
+		}
+
+	}
+}

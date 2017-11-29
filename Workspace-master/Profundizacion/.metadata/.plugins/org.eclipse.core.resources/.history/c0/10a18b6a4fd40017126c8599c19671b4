@@ -1,0 +1,9 @@
+
+public class Ramdom {
+
+	public int nextInt(int i) {
+		// TODO Auto-generated method stub
+		return i;
+	}
+
+}
